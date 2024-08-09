@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+/public
+/public/**
+
+/resources/_gen
+/resources/_gen/**
+
+.hugo_build.lock

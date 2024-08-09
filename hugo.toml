@@ -1,3 +1,61 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://photos.cashpw.com/'
+copyright = "© Cash Prokop-Weaver"
+defaultContentLanguage = "en-us"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+languageCode = "en-us"
+timeZone = "America/Los_Angeles"
+timeout = "120s"
+theme = "gallery"
+title = "Cash Prokop-Weaver"
+
+[params]
+defaultTheme = "Gallery"
+description = "Photographs by Cash Prokop-Weaver"
+
+[params.author]
+email = "photos@cashpw.com"
+name = "Cash Prokop-Weaver"
+
+[params.socialIcons]
+#facebook = "https://www.facebook.com/"
+instagram = "https://www.instagram.com/cashweaver"
+github = "https://github.com/cashpw"
+#youtube = "https://www.youtube.com/"
+email = "mailto:photos@cashpw.com"
+linkedin = "https://linkedin.com/cashpw"
+#website = "https://example.com"
+#mastodon = "https://example.com"
+#pixelfed = "https://example.com"
+
+[outputs]
+home = ["HTML", "RSS"]
+page = ["HTML"]
+section = ["HTML"]
+
+[imaging]
+quality = 75
+resampleFilter = "CatmullRom"
+
+[imaging.exif]
+disableDate = false
+disableLatLong = true
+includeFields = "ImageDescription|Orientation|Aperture|FNumber|ExposureTime|ISO|FocalLength|CreateDate|Model"
+
+#[module]
+#[module.hugoVersion]
+#min = "0.121.2"
+#[[module.imports]]
+#path = "github.com/nicokaiser/hugo-theme-gallery/v4"
+
+[menu]
+
+[[menu.footer]]
+name = "cashpw.com"
+url = "https://cashpw.com"
+weight = 3
+
+[services]
+
+[services.rss]
+limit = 100
