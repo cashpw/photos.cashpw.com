@@ -5,6 +5,6 @@ repos:
             name: Ban spicy exif data
             description: Ensures that there is no sensitive exif data committed
             language: system
-            entry: exiftool -gps:all= @ -overwrite_original
+            entry: exiftool -gps:all= -overwrite_original
             exclude_types: ["svg"]
             types: ["image"]
